@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'checkbox'                 => '复选框',
+    'multiple_checkbox'        => '多选按钮',
+    'color'                    => '颜色拾取器',
+    'date'                     => '日期输入框',
+    'file'                     => '文件上传',
+    'image'                    => '图片上传',
+    'multiple_images'          => '图片多选',
+    'media_picker'             => '多媒体选择器',
+    'number'                   => '数字输入框',
+    'password'                 => '密码输入框',
+    'radio_btn'                => '单选按钮',
+    'rich_text_box'            => '富文本编辑器',
+    'code_editor'              => '代码编辑器',
+    'markdown_editor'          => 'Markdown',
+    'select_dropdown'          => '下拉选择',
+    'select_multiple'          => '下拉多选',
+    'text'                     => '文本输入框',
+    'text_area'                => 'Textarea',
+    'time'                     => '时间输入框',
+    'timestamp'                => '时间日期输入框',
+    'hidden'                   => '隐藏输入框',
+    'coordinates'              => '经纬度',
+];

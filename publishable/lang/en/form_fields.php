@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'checkbox'                 => 'Checkbox',
+    'multiple_checkbox'        => 'Multiple Checkbox',
+    'color'                    => 'Color',
+    'date'                     => 'Date',
+    'file'                     => 'File',
+    'image'                    => 'Image',
+    'multiple_images'          => 'Multiple Images',
+    'media_picker'             => 'Media Picker',
+    'number'                   => 'Number',
+    'password'                 => 'Password',
+    'radio_btn'                => 'Radio',
+    'rich_text_box'            => 'Rich Text Editor',
+    'code_editor'              => 'Code Editor',
+    'markdown_editor'          => 'Markdown Editor',
+    'select_dropdown'          => 'Select Dropdown',
+    'select_multiple'          => 'Select Multiple',
+    'text'                     => 'Text',
+    'text_area'                => 'Textarea',
+    'time'                     => 'Time',
+    'timestamp'                => 'Timestamp',
+    'hidden'                   => 'Hidden',
+    'coordinates'              => 'Coordinates',
+];
