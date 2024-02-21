@@ -1,8 +1,8 @@
 <?php
 
-namespace PickOne\Hymer\FormFields\After;
+namespace IMyxuan\Hymer\FormFields\After;
 
-use PickOne\Hymer\Traits\Renderable;
+use IMyxuan\Hymer\Traits\Renderable;
 
 abstract class AbstractHandler implements HandlerInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Providers;
+namespace IMyxuan\Hymer\Providers;
 
 use Arrilot\Widgets\ServiceProvider as WidgetServiceProvider;
 use Illuminate\Support\ServiceProvider;
-use PickOne\Hymer\Seed;
+use IMyxuan\Hymer\Seed;
 
 class HymerDummyServiceProvider extends ServiceProvider
 {

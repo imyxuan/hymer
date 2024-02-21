@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer;
+namespace IMyxuan\Hymer;
 
 use ArrayAccess;
 use Illuminate\Database\Eloquent\Model;
 use JsonSerializable;
-use PickOne\Hymer\Facades\Hymer as HymerFacade;
+use IMyxuan\Hymer\Facades\Hymer as HymerFacade;
 
 class Translator implements ArrayAccess, JsonSerializable
 {
@@ -303,7 +303,7 @@ class Translator implements ArrayAccess, JsonSerializable
     public function __call($method, array $arguments)
     {
         if (!$this->model->hasTranslatorMethod($method)) {
-            throw new \Exception('Call to undefined method PickOne\Hymer\Translator::'.$method.'()');
+            throw new \Exception('Call to undefined method IMyxuan\Hymer\Translator::'.$method.'()');
         }
 
         return call_user_func_array([$this, 'runTranslatorMethod'], [$method, $arguments]);

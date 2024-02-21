@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Commands;
+namespace IMyxuan\Hymer\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Composer;
 use Symfony\Component\Console\Input\InputOption;
-use PickOne\Hymer\Providers\HymerDummyServiceProvider;
-use PickOne\Hymer\HymerServiceProvider;
+use IMyxuan\Hymer\Providers\HymerDummyServiceProvider;
+use IMyxuan\Hymer\HymerServiceProvider;
 
 class InstallCommand extends Command
 {
@@ -101,13 +101,13 @@ class InstallCommand extends Command
             $str = file_get_contents($userPath);
 
             if ($str !== false) {
-                $str = str_replace('extends Authenticatable', "extends \PickOne\Hymer\Models\User", $str);
+                $str = str_replace('extends Authenticatable', "extends \IMyxuan\Hymer\Models\User", $str);
 
                 file_put_contents($userPath, $str);
             }
         } else {
             $this->warn('Unable to locate "User.php" in app or app/Models.  Did you move this file?');
-            $this->warn('You will need to update this manually.  Change "extends Authenticatable" to "extends \PickOne\Hymer\Models\User" in your User model');
+            $this->warn('You will need to update this manually.  Change "extends Authenticatable" to "extends \IMyxuan\Hymer\Models\User" in your User model');
         }
 
         $this->info('Adding Hymer routes to routes/web.php');

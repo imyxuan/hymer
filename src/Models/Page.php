@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Traits\Translatable;
 
 class Page extends Model
 {

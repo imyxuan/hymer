@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Events;
+namespace IMyxuan\Hymer\Events;
 
 use Illuminate\Queue\SerializesModels;
 

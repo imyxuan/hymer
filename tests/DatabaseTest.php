@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Doctrine\DBAL\Schema\SchemaException;
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Database\Schema\SchemaManager;
-use PickOne\Hymer\Database\Schema\Table;
-use PickOne\Hymer\Database\Types\Type;
-use PickOne\Hymer\Traits\AlertsMessages;
+use IMyxuan\Hymer\Database\Schema\SchemaManager;
+use IMyxuan\Hymer\Database\Schema\Table;
+use IMyxuan\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Traits\AlertsMessages;
 
 class DatabaseTest extends TestCase
 {

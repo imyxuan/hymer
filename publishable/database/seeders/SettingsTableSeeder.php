@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Setting;
+use IMyxuan\Hymer\Models\Setting;
 
 class SettingsTableSeeder extends Seeder
 {

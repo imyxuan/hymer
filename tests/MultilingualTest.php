@@ -1,14 +1,14 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Models\Page;
-use PickOne\Hymer\Traits\Translatable;
-use PickOne\Hymer\Translator;
-use PickOne\Hymer\Translator\Collection;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Models\Page;
+use IMyxuan\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Translator;
+use IMyxuan\Hymer\Translator\Collection;
 
 class MultilingualTest extends TestCase
 {

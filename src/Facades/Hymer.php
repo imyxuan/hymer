@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Facades;
+namespace IMyxuan\Hymer\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -12,7 +12,7 @@ class Hymer extends Facade
      * @method static string image($file, $default = '')
      * @method static $this useModel($name, $object)
      *
-     * @see \PickOne\Hymer\Hymer
+     * @see \IMyxuan\Hymer\Hymer
      * @return string
      */
     protected static function getFacadeAccessor()

@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Policies;
+namespace IMyxuan\Hymer\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use PickOne\Hymer\Contracts\User;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Contracts\User;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class BasePolicy
 {
@@ -25,7 +25,7 @@ class BasePolicy
         if (count($arguments) < 2) {
             throw new \InvalidArgumentException('not enough arguments');
         }
-        /** @var \PickOne\Hymer\Contracts\User $user */
+        /** @var \IMyxuan\Hymer\Contracts\User $user */
         $user = $arguments[0];
 
         /** @var $model */
@@ -37,7 +37,7 @@ class BasePolicy
     /**
      * Determine if the given model can be restored by the user.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool
@@ -51,7 +51,7 @@ class BasePolicy
     /**
      * Determine if the given model can be deleted by the user.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool
@@ -67,7 +67,7 @@ class BasePolicy
     /**
      * Check if user has an associated permission.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param object                      $model
      * @param string                      $action
      *

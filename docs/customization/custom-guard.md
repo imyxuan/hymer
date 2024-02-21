@@ -40,7 +40,7 @@ and a model which extends Hymers user-model:
 
 namespace App;
 
-class Admin extends \PickOne\Hymer\Models\User
+class Admin extends \IMyxuan\Hymer\Models\User
 {
 
 }

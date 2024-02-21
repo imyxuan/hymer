@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers;
+namespace IMyxuan\Hymer\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -9,19 +9,19 @@ use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Storage;
-use PickOne\Hymer\Events\FileDeleted;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Checkbox;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Coordinates;
-use PickOne\Hymer\Http\Controllers\ContentTypes\File;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Image as ContentImage;
-use PickOne\Hymer\Http\Controllers\ContentTypes\MultipleCheckbox;
-use PickOne\Hymer\Http\Controllers\ContentTypes\MultipleImage;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Password;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Relationship;
-use PickOne\Hymer\Http\Controllers\ContentTypes\SelectMultiple;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Text;
-use PickOne\Hymer\Http\Controllers\ContentTypes\Timestamp;
-use PickOne\Hymer\Traits\AlertsMessages;
+use IMyxuan\Hymer\Events\FileDeleted;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Checkbox;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Coordinates;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\File;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Image as ContentImage;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\MultipleCheckbox;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\MultipleImage;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Password;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Relationship;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\SelectMultiple;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Text;
+use IMyxuan\Hymer\Http\Controllers\ContentTypes\Timestamp;
+use IMyxuan\Hymer\Traits\AlertsMessages;
 use Validator;
 
 abstract class Controller extends BaseController

@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Role;
+use IMyxuan\Hymer\Models\Role;
 
 class RolesTableSeeder extends Seeder
 {

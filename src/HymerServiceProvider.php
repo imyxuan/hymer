@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer;
+namespace IMyxuan\Hymer;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\Eloquent\Collection;
@@ -16,19 +16,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Intervention\Image\ImageServiceProvider;
-use PickOne\Hymer\Events\FormFieldsRegistered;
-use PickOne\Hymer\Facades\Hymer as HymerFacade;
-use PickOne\Hymer\FormFields\After\DescriptionHandler;
-use PickOne\Hymer\Http\Middleware\HymerAdminMiddleware;
-use PickOne\Hymer\Models\MenuItem;
-use PickOne\Hymer\Models\Setting;
-use PickOne\Hymer\Policies\BasePolicy;
-use PickOne\Hymer\Policies\MenuItemPolicy;
-use PickOne\Hymer\Policies\SettingPolicy;
-use PickOne\Hymer\Providers\HymerDummyServiceProvider;
-use PickOne\Hymer\Providers\HymerEventServiceProvider;
-use PickOne\Hymer\Seed;
-use PickOne\Hymer\Translator\Collection as TranslatorCollection;
+use IMyxuan\Hymer\Events\FormFieldsRegistered;
+use IMyxuan\Hymer\Facades\Hymer as HymerFacade;
+use IMyxuan\Hymer\FormFields\After\DescriptionHandler;
+use IMyxuan\Hymer\Http\Middleware\HymerAdminMiddleware;
+use IMyxuan\Hymer\Models\MenuItem;
+use IMyxuan\Hymer\Models\Setting;
+use IMyxuan\Hymer\Policies\BasePolicy;
+use IMyxuan\Hymer\Policies\MenuItemPolicy;
+use IMyxuan\Hymer\Policies\SettingPolicy;
+use IMyxuan\Hymer\Providers\HymerDummyServiceProvider;
+use IMyxuan\Hymer\Providers\HymerEventServiceProvider;
+use IMyxuan\Hymer\Seed;
+use IMyxuan\Hymer\Translator\Collection as TranslatorCollection;
 
 class HymerServiceProvider extends ServiceProvider
 {
@@ -219,7 +219,7 @@ class HymerServiceProvider extends ServiceProvider
         $components = ['title', 'text', 'button'];
 
         foreach ($components as $component) {
-            $class = 'PickOne\\Hymer\\Alert\\Components\\'.ucfirst(Str::camel($component)).'Component';
+            $class = 'IMyxuan\\Hymer\\Alert\\Components\\'.ucfirst(Str::camel($component)).'Component';
 
             $this->app->bind("hymer.alert.components.{$component}", $class);
         }
@@ -337,7 +337,7 @@ class HymerServiceProvider extends ServiceProvider
         foreach ($formFields as $formField) {
             $class = Str::studly("{$formField}_handler");
 
-            HymerFacade::addFormField("PickOne\\Hymer\\FormFields\\{$class}");
+            HymerFacade::addFormField("IMyxuan\\Hymer\\FormFields\\{$class}");
         }
 
         HymerFacade::addAfterFormField(DescriptionHandler::class);

@@ -1,14 +1,14 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
-use PickOne\Hymer\Models\Category;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\Permission;
+use IMyxuan\Hymer\Models\Category;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\Permission;
 
 class FormfieldsTest extends TestCase
 {
@@ -375,7 +375,7 @@ class FormfieldsTest extends TestCase
         $this->visitRoute('hymer.bread.create', ['table' => 'categories'])
         ->select($name, 'field_input_type_'.$name)
         ->type($options, 'field_details_'.$name)
-        ->type('PickOne\\Hymer\\Models\\Category', 'model_name')
+        ->type('IMyxuan\\Hymer\\Models\\Category', 'model_name')
         ->press(__('hymer::generic.submit'))
         ->seeRouteIs('hymer.bread.index');
 

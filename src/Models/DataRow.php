@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use PickOne\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Traits\Translatable;
 
 class DataRow extends Model
 {

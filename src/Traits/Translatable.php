@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Traits;
+namespace IMyxuan\Hymer\Traits;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Models\Translation;
-use PickOne\Hymer\Translator;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Models\Translation;
+use IMyxuan\Hymer\Translator;
 
 trait Translatable
 {

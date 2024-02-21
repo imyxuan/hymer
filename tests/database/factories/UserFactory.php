@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Tests\Database\Factories;
+namespace IMyxuan\Hymer\Tests\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
- 
+
 class UserFactory extends Factory
 {
-    protected $model = \PickOne\Hymer\Models\User::class;
+    protected $model = \IMyxuan\Hymer\Models\User::class;
 
     public function definition()
     {

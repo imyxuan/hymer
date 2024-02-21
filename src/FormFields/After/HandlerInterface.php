@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\FormFields\After;
+namespace IMyxuan\Hymer\FormFields\After;
 
 interface HandlerInterface
 {

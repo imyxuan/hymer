@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Mysql;
+namespace IMyxuan\Hymer\Database\Types\Mysql;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 class LongTextType extends Type
 {

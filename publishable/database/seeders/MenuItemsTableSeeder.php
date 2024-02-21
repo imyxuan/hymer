@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Menu;
-use PickOne\Hymer\Models\MenuItem;
+use IMyxuan\Hymer\Models\Menu;
+use IMyxuan\Hymer\Models\MenuItem;
 
 class MenuItemsTableSeeder extends Seeder
 {

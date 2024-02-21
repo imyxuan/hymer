@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Support\Facades\Auth;
 

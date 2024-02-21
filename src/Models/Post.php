@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Traits\Resizable;
-use PickOne\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Traits\Resizable;
+use IMyxuan\Hymer\Traits\Translatable;
 
 class Post extends Model
 {

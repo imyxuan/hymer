@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers;
+namespace IMyxuan\Hymer\Http\Controllers;
 
 use Artisan;
 use Exception;

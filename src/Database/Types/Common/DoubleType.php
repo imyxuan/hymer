@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Common;
+namespace IMyxuan\Hymer\Database\Types\Common;
 
 use Doctrine\DBAL\Types\FloatType as DoctrineFloatType;
 

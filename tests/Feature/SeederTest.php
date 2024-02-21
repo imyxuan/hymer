@@ -1,8 +1,8 @@
 <?php
 
-namespace PickOne\Hymer\Tests\Feature;
+namespace IMyxuan\Hymer\Tests\Feature;
 
-use PickOne\Hymer\Tests\TestCase;
+use IMyxuan\Hymer\Tests\TestCase;
 
 class SeederTest extends TestCase
 {

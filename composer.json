@@ -1,5 +1,5 @@
 {
-  "name": "pickone/hymer",
+  "name": "imyxuan/hymer",
   "description": "A Laravel Admin Package for The Control Group to make your life easier and steer your project in the right direction",
   "keywords": [
     "laravel",
@@ -33,13 +33,13 @@
   },
   "autoload": {
     "psr-4": {
-      "PickOne\\Hymer\\": "src/"
+      "IMyxuan\\Hymer\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PickOne\\Hymer\\Tests\\": "tests/",
-      "PickOne\\Hymer\\Tests\\Database\\Factories\\": "tests/database/factories/",
+      "IMyxuan\\Hymer\\Tests\\": "tests/",
+      "IMyxuan\\Hymer\\Tests\\Database\\Factories\\": "tests/database/factories/",
       "Database\\Seeders\\": "vendor/orchestra/testbench-core/laravel/database/seeders"
     }
   },
@@ -47,8 +47,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "PickOne\\Hymer\\HymerServiceProvider",
-        "PickOne\\Hymer\\Providers\\HymerDummyServiceProvider"
+        "IMyxuan\\Hymer\\HymerServiceProvider",
+        "IMyxuan\\Hymer\\Providers\\HymerDummyServiceProvider"
       ]
     }
   },

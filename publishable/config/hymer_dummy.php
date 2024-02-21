@@ -27,7 +27,7 @@ return [
     */
 
     'controllers' => [
-        'namespace' => 'PickOne\\Hymer\\Http\\Controllers',
+        'namespace' => 'IMyxuan\\Hymer\\Http\\Controllers',
     ],
 
     /*
@@ -144,9 +144,9 @@ return [
         ],
 
         'widgets' => [
-            'PickOne\\Hymer\\Widgets\\UserDimmer',
-            'PickOne\\Hymer\\Widgets\\PostDimmer',
-            'PickOne\\Hymer\\Widgets\\PageDimmer',
+            'IMyxuan\\Hymer\\Widgets\\UserDimmer',
+            'IMyxuan\\Hymer\\Widgets\\PostDimmer',
+            'IMyxuan\\Hymer\\Widgets\\PageDimmer',
         ],
 
     ],

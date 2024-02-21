@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Commands;
+namespace IMyxuan\Hymer\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Input\InputOption;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class AdminCommand extends Command
 {

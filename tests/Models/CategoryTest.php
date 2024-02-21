@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Models\Category;
-use PickOne\Hymer\Models\Post;
+use IMyxuan\Hymer\Models\Category;
+use IMyxuan\Hymer\Models\Post;
 
 class CategoryTest extends TestCase
 {

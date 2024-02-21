@@ -30,7 +30,7 @@ You can override the controller for a single BREAD by creating a controller whic
 
 namespace App\Http\Controllers;
 
-class HymerCategoriesController extends \PickOne\Hymer\Http\Controllers\HymerBaseController
+class HymerCategoriesController extends \IMyxuan\Hymer\Http\Controllers\HymerBaseController
 {
     //...
 }
@@ -86,7 +86,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Events\Dispatcher;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -105,7 +105,7 @@ The next step is to create your model and make it extend the original model. In 
 
 namespace App;
 
-class DataRow extends \PickOne\Hymer\Models\DataRow
+class DataRow extends \IMyxuan\Hymer\Models\DataRow
 {
     // ...
 }

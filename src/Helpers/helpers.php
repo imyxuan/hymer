@@ -3,14 +3,14 @@
 if (!function_exists('setting')) {
     function setting($key, $default = null)
     {
-        return PickOne\Hymer\Facades\Hymer::setting($key, $default);
+        return IMyxuan\Hymer\Facades\Hymer::setting($key, $default);
     }
 }
 
 if (!function_exists('menu')) {
     function menu($menuName, $type = null, array $options = [])
     {
-        return PickOne\Hymer\Facades\Hymer::model('Menu')->display($menuName, $type, $options);
+        return IMyxuan\Hymer\Facades\Hymer::model('Menu')->display($menuName, $type, $options);
     }
 }
 

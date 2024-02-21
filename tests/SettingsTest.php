@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Models\Setting;
+use IMyxuan\Hymer\Models\Setting;
 
 class SettingsTest extends TestCase
 {

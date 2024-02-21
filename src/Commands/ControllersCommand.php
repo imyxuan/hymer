@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Commands;
+namespace IMyxuan\Hymer\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -62,8 +62,8 @@ class ControllersCommand extends Command
     public function handle()
     {
         $stub = $this->getStub();
-        $files = $this->filesystem->files(base_path('vendor/pickone/hymer/src/Http/Controllers'));
-        $namespace = config('hymer.controllers.namespace', 'PickOne\\Hymer\\Http\\Controllers');
+        $files = $this->filesystem->files(base_path('vendor/imyxuan/hymer/src/Http/Controllers'));
+        $namespace = config('hymer.controllers.namespace', 'IMyxuan\\Hymer\\Http\\Controllers');
 
         $appNamespace = app()->getNamespace();
 
@@ -104,7 +104,7 @@ class ControllersCommand extends Command
      */
     public function getStub()
     {
-        return $this->filesystem->get(base_path('/vendor/pickone/hymer/stubs/'.$this->stub));
+        return $this->filesystem->get(base_path('/vendor/imyxuan/hymer/stubs/'.$this->stub));
     }
 
     /**
@@ -117,7 +117,7 @@ class ControllersCommand extends Command
      */
     protected function generateContent($stub, $class)
     {
-        $namespace = config('hymer.controllers.namespace', 'PickOne\\Hymer\\Http\\Controllers');
+        $namespace = config('hymer.controllers.namespace', 'IMyxuan\\Hymer\\Http\\Controllers');
 
         $content = str_replace(
             'DummyNamespace',
@@ -127,7 +127,7 @@ class ControllersCommand extends Command
 
         $content = str_replace(
             'FullBaseDummyClass',
-            'PickOne\\Hymer\\Http\\Controllers\\'.$class,
+            'IMyxuan\\Hymer\\Http\\Controllers\\'.$class,
             $content
         );
 

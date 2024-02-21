@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Database;
+namespace IMyxuan\Hymer\Database;
 
 use Doctrine\DBAL\Schema\Column;
 use Doctrine\DBAL\Schema\SchemaException;
 use Doctrine\DBAL\Schema\TableDiff;
-use PickOne\Hymer\Database\Schema\SchemaManager;
-use PickOne\Hymer\Database\Schema\Table;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Schema\SchemaManager;
+use IMyxuan\Hymer\Database\Schema\Table;
+use IMyxuan\Hymer\Database\Types\Type;
 
 class DatabaseUpdater
 {

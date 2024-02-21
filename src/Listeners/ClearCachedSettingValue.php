@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Listeners;
+namespace IMyxuan\Hymer\Listeners;
 
 use Cache;
-use PickOne\Hymer\Events\SettingUpdated;
+use IMyxuan\Hymer\Events\SettingUpdated;
 
 class ClearCachedSettingValue
 {

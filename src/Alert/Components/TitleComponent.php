@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Alert\Components;
+namespace IMyxuan\Hymer\Alert\Components;
 
 class TitleComponent extends AbstractComponent
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace PickOne\Hymer\Policies;
+namespace IMyxuan\Hymer\Policies;
 
-use PickOne\Hymer\Contracts\User;
+use IMyxuan\Hymer\Contracts\User;
 
 class SettingPolicy extends BasePolicy
 {
     /**
      * Determine if the given user can browse the model.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool
@@ -22,7 +22,7 @@ class SettingPolicy extends BasePolicy
     /**
      * Determine if the given model can be viewed by the user.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool
@@ -35,7 +35,7 @@ class SettingPolicy extends BasePolicy
     /**
      * Determine if the given model can be edited by the user.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool
@@ -48,7 +48,7 @@ class SettingPolicy extends BasePolicy
     /**
      * Determine if the given user can create the model.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool
@@ -61,7 +61,7 @@ class SettingPolicy extends BasePolicy
     /**
      * Determine if the given model can be deleted by the user.
      *
-     * @param \PickOne\Hymer\Contracts\User $user
+     * @param \IMyxuan\Hymer\Contracts\User $user
      * @param  $model
      *
      * @return bool

@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Http\Middleware;
+namespace IMyxuan\Hymer\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

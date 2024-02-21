@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Contracts;
+namespace IMyxuan\Hymer\Contracts;
 
 interface User
 {

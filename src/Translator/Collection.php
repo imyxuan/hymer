@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Translator;
+namespace IMyxuan\Hymer\Translator;
 
 use Illuminate\Support\Collection as IlluminateCollection;
 

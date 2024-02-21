@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Policies;
+namespace IMyxuan\Hymer\Policies;
 
-use PickOne\Hymer\Contracts\User;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Contracts\User;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class MenuItemPolicy extends BasePolicy
 {

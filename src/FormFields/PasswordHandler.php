@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\FormFields;
+namespace IMyxuan\Hymer\FormFields;
 
 class PasswordHandler extends AbstractHandler
 {

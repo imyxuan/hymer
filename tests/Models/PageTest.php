@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use PickOne\Hymer\Models\Page;
+use IMyxuan\Hymer\Models\Page;
 
 class PageTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Traits\Translatable;
 
 class Category extends Model
 {

@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\DataType;
 
 class DataTypesTableSeeder extends Seeder
 {
@@ -19,9 +19,9 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_singular' => __('hymer::seeders.data_types.user.singular'),
                 'display_name_plural'   => __('hymer::seeders.data_types.user.plural'),
                 'icon'                  => 'hymer-person',
-                'model_name'            => 'PickOne\\Hymer\\Models\\User',
-                'policy_name'           => 'PickOne\\Hymer\\Policies\\UserPolicy',
-                'controller'            => 'PickOne\\Hymer\\Http\\Controllers\\HymerUserController',
+                'model_name'            => 'IMyxuan\\Hymer\\Models\\User',
+                'policy_name'           => 'IMyxuan\\Hymer\\Policies\\UserPolicy',
+                'controller'            => 'IMyxuan\\Hymer\\Http\\Controllers\\HymerUserController',
                 'generate_permissions'  => 1,
                 'description'           => '',
             ])->save();
@@ -34,7 +34,7 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_singular' => __('hymer::seeders.data_types.menu.singular'),
                 'display_name_plural'   => __('hymer::seeders.data_types.menu.plural'),
                 'icon'                  => 'hymer-list',
-                'model_name'            => 'PickOne\\Hymer\\Models\\Menu',
+                'model_name'            => 'IMyxuan\\Hymer\\Models\\Menu',
                 'controller'            => '',
                 'generate_permissions'  => 1,
                 'description'           => '',
@@ -48,8 +48,8 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_singular' => __('hymer::seeders.data_types.role.singular'),
                 'display_name_plural'   => __('hymer::seeders.data_types.role.plural'),
                 'icon'                  => 'hymer-lock',
-                'model_name'            => 'PickOne\\Hymer\\Models\\Role',
-                'controller'            => 'PickOne\\Hymer\\Http\\Controllers\\HymerRoleController',
+                'model_name'            => 'IMyxuan\\Hymer\\Models\\Role',
+                'controller'            => 'IMyxuan\\Hymer\\Http\\Controllers\\HymerRoleController',
                 'generate_permissions'  => 1,
                 'description'           => '',
             ])->save();

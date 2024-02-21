@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use PickOne\Hymer\Models\Page;
+use IMyxuan\Hymer\Models\Page;
 
 class CreatePagesTable extends Migration
 {

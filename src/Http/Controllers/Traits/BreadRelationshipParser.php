@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers\Traits;
+namespace IMyxuan\Hymer\Http\Controllers\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
-use PickOne\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\DataType;
 
 trait BreadRelationshipParser
 {

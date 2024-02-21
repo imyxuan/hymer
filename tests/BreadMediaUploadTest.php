@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use PickOne\Hymer\Models\DataRow;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\Page;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\Page;
 
 class BreadMediaUploadTest extends TestCase
 {

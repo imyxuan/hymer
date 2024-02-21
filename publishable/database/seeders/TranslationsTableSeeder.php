@@ -3,11 +3,11 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Category;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\MenuItem;
-use PickOne\Hymer\Models\Page;
-use PickOne\Hymer\Models\Translation;
+use IMyxuan\Hymer\Models\Category;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\MenuItem;
+use IMyxuan\Hymer\Models\Page;
+use IMyxuan\Hymer\Models\Translation;
 
 class TranslationsTableSeeder extends Seeder
 {

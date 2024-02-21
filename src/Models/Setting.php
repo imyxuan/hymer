@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use PickOne\Hymer\Events\SettingUpdated;
+use IMyxuan\Hymer\Events\SettingUpdated;
 
 class Setting extends Model
 {

@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
-use PickOne\Hymer\Models\Role;
-use PickOne\Hymer\Models\User;
+use IMyxuan\Hymer\Models\Role;
+use IMyxuan\Hymer\Models\User;
 
 class UsersTableSeeder extends Seeder
 {

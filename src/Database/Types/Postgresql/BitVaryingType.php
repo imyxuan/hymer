@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Postgresql;
+namespace IMyxuan\Hymer\Database\Types\Postgresql;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 class BitVaryingType extends Type
 {

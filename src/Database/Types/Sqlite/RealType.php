@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Sqlite;
+namespace IMyxuan\Hymer\Database\Types\Sqlite;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 class RealType extends Type
 {

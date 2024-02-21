@@ -1,25 +1,25 @@
 <?php
 
-namespace PickOne\Hymer\Tests\Unit\Actions;
+namespace IMyxuan\Hymer\Tests\Unit\Actions;
 
-use PickOne\Hymer\Actions\AbstractAction;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Models\User;
-use PickOne\Hymer\Tests\TestCase;
+use IMyxuan\Hymer\Actions\AbstractAction;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Models\User;
+use IMyxuan\Hymer\Tests\TestCase;
 
 class AbstractActionTest extends TestCase
 {
     /**
      * The users DataType instance.
      *
-     * @var \PickOne\Hymer\Models\DataType
+     * @var \IMyxuan\Hymer\Models\DataType
      */
     protected $userDataType;
 
     /**
      * A dummy user instance.
      *
-     * @var \PickOne\Hymer\Models\User
+     * @var \IMyxuan\Hymer\Models\User
      */
     protected $user;
 
@@ -28,7 +28,7 @@ class AbstractActionTest extends TestCase
         parent::setUp();
 
         $this->userDataType = Hymer::model('DataType')->where('name', 'users')->first();
-        $this->user = \PickOne\Hymer\Models\User::factory()->create();
+        $this->user = \IMyxuan\Hymer\Models\User::factory()->create();
     }
 
     /**

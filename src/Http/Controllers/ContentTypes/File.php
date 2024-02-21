@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers\ContentTypes;
+namespace IMyxuan\Hymer\Http\Controllers\ContentTypes;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;

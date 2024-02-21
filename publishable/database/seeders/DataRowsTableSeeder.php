@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\DataRow;
-use PickOne\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
 
 class DataRowsTableSeeder extends Seeder
 {
@@ -149,7 +149,7 @@ class DataRowsTableSeeder extends Seeder
                 'add'          => 1,
                 'delete'       => 0,
                 'details'      => [
-                    'model'       => 'PickOne\\Hymer\\Models\\Role',
+                    'model'       => 'IMyxuan\\Hymer\\Models\\Role',
                     'table'       => 'roles',
                     'type'        => 'belongsTo',
                     'column'      => 'role_id',
@@ -174,7 +174,7 @@ class DataRowsTableSeeder extends Seeder
                 'add'          => 1,
                 'delete'       => 0,
                 'details'      => [
-                    'model'       => 'PickOne\\Hymer\\Models\\Role',
+                    'model'       => 'IMyxuan\\Hymer\\Models\\Role',
                     'table'       => 'roles',
                     'type'        => 'belongsToMany',
                     'column'      => 'id',

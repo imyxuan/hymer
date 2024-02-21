@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer\Database\Schema;
+namespace IMyxuan\Hymer\Database\Schema;
 
 use Doctrine\DBAL\Schema\SchemaException;
 use Doctrine\DBAL\Schema\Table as DoctrineTable;
 use Illuminate\Support\Facades\DB;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 abstract class SchemaManager
 {
@@ -49,7 +49,7 @@ abstract class SchemaManager
     /**
      * @param string $tableName
      *
-     * @return \PickOne\Hymer\Database\Schema\Table
+     * @return \IMyxuan\Hymer\Database\Schema\Table
      */
     public static function listTableDetails($tableName)
     {

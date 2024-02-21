@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers;
+namespace IMyxuan\Hymer\Http\Controllers;
 
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class HymerAuthController extends Controller
 {

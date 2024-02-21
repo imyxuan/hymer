@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Widgets;
+namespace IMyxuan\Hymer\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 

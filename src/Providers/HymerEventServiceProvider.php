@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer\Providers;
+namespace IMyxuan\Hymer\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
-use PickOne\Hymer\Events;
-use PickOne\Hymer\Listeners;
+use IMyxuan\Hymer\Events;
+use IMyxuan\Hymer\Listeners;
 
 class HymerEventServiceProvider extends ServiceProvider
 {

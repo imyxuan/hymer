@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Tests\Feature;
+namespace IMyxuan\Hymer\Tests\Feature;
 
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Tests\TestCase;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Tests\TestCase;
 
 class DashboardTest extends TestCase
 {

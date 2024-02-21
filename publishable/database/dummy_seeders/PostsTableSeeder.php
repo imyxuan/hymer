@@ -3,12 +3,12 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\DataRow;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\Menu;
-use PickOne\Hymer\Models\MenuItem;
-use PickOne\Hymer\Models\Permission;
-use PickOne\Hymer\Models\Post;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\Menu;
+use IMyxuan\Hymer\Models\MenuItem;
+use IMyxuan\Hymer\Models\Permission;
+use IMyxuan\Hymer\Models\Post;
 
 class PostsTableSeeder extends Seeder
 {
@@ -25,8 +25,8 @@ class PostsTableSeeder extends Seeder
                 'display_name_singular' => __('hymer::seeders.data_types.post.singular'),
                 'display_name_plural'   => __('hymer::seeders.data_types.post.plural'),
                 'icon'                  => 'hymer-news',
-                'model_name'            => 'PickOne\\Hymer\\Models\\Post',
-                'policy_name'           => 'PickOne\\Hymer\\Policies\\PostPolicy',
+                'model_name'            => 'IMyxuan\\Hymer\\Models\\Post',
+                'policy_name'           => 'IMyxuan\\Hymer\\Policies\\PostPolicy',
                 'controller'            => '',
                 'generate_permissions'  => 1,
                 'description'           => '',

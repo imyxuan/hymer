@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Traits;
+namespace IMyxuan\Hymer\Traits;
 
 use Illuminate\View\View;
 

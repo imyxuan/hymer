@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Permission;
+use IMyxuan\Hymer\Models\Permission;
 
 class PermissionsTableSeeder extends Seeder
 {

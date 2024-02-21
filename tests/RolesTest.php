@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Auth;
-use PickOne\Hymer\Models\Role;
+use IMyxuan\Hymer\Models\Role;
 
 class RolesTest extends TestCase
 {

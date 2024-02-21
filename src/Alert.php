@@ -1,8 +1,8 @@
 <?php
 
-namespace PickOne\Hymer;
+namespace IMyxuan\Hymer;
 
-use PickOne\Hymer\Alert\Components\ComponentInterface;
+use IMyxuan\Hymer\Alert\Components\ComponentInterface;
 
 class Alert
 {

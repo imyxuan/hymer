@@ -1,12 +1,12 @@
 <?php
 
-namespace PickOne\Hymer\Tests\Database\Factories;
+namespace IMyxuan\Hymer\Tests\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
- 
+
 class RoleFactory extends Factory
 {
-    protected $model = \PickOne\Hymer\Models\Role::class;
+    protected $model = \IMyxuan\Hymer\Models\Role::class;
 
     public function definition()
     {

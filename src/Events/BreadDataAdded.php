@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Events;
+namespace IMyxuan\Hymer\Events;
 
 use Illuminate\Queue\SerializesModels;
-use PickOne\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\DataType;
 
 class BreadDataAdded
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Commands;
+namespace IMyxuan\Hymer\Commands;
 
 use Illuminate\Foundation\Console\ModelMakeCommand;
 use Symfony\Component\Console\Input\InputOption;

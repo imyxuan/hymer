@@ -1,19 +1,19 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers;
+namespace IMyxuan\Hymer\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use ReflectionClass;
-use PickOne\Hymer\Database\Schema\SchemaManager;
-use PickOne\Hymer\Database\Schema\Table;
-use PickOne\Hymer\Database\Types\Type;
-use PickOne\Hymer\Events\BreadAdded;
-use PickOne\Hymer\Events\BreadDeleted;
-use PickOne\Hymer\Events\BreadUpdated;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Database\Schema\SchemaManager;
+use IMyxuan\Hymer\Database\Schema\Table;
+use IMyxuan\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Events\BreadAdded;
+use IMyxuan\Hymer\Events\BreadDeleted;
+use IMyxuan\Hymer\Events\BreadUpdated;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class HymerBreadController extends Controller
 {
@@ -152,7 +152,7 @@ class HymerBreadController extends Controller
     {
         $this->authorize('browse_bread');
 
-        /* @var \PickOne\Hymer\Models\DataType $dataType */
+        /* @var \IMyxuan\Hymer\Models\DataType $dataType */
         try {
             $dataType = Hymer::model('DataType')->find($id);
 
@@ -189,7 +189,7 @@ class HymerBreadController extends Controller
     {
         $this->authorize('browse_bread');
 
-        /* @var \PickOne\Hymer\Models\DataType $dataType */
+        /* @var \IMyxuan\Hymer\Models\DataType $dataType */
         $dataType = Hymer::model('DataType')->find($id);
 
         // Delete Translations, if present

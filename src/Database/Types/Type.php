@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types;
+namespace IMyxuan\Hymer\Database\Types;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform as DoctrineAbstractPlatform;
 use Doctrine\DBAL\Types\Type as DoctrineType;
-use PickOne\Hymer\Database\Platforms\Platform;
-use PickOne\Hymer\Database\Schema\SchemaManager;
+use IMyxuan\Hymer\Database\Platforms\Platform;
+use IMyxuan\Hymer\Database\Schema\SchemaManager;
 
 abstract class Type extends DoctrineType
 {

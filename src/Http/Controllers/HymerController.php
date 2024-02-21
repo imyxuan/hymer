@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers;
+namespace IMyxuan\Hymer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Intervention\Image\Constraint;
 use Intervention\Image\Facades\Image;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class HymerController extends Controller
 {

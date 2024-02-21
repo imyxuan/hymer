@@ -6,7 +6,7 @@
 
 To update to the latest version inside of your composer.json file make sure to update the version of Hymer inside the require declaration of your composer.json to:
 
-`pickone/hymer": "1.6.*`
+`imyxuan/hymer": "1.6.*`
 
 And then run `composer update`
 

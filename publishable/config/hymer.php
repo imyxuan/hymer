@@ -27,7 +27,7 @@ return [
     */
 
     'controllers' => [
-        'namespace' => 'PickOne\\Hymer\\Http\\Controllers',
+        'namespace' => 'IMyxuan\\Hymer\\Http\\Controllers',
     ],
 
     /*

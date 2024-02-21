@@ -1,8 +1,8 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Postgresql;
+namespace IMyxuan\Hymer\Database\Types\Postgresql;
 
-use PickOne\Hymer\Database\Types\Common\VarCharType;
+use IMyxuan\Hymer\Database\Types\Common\VarCharType;
 
 class CharacterVaryingType extends VarCharType
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Postgresql;
+namespace IMyxuan\Hymer\Database\Types\Postgresql;
 
-use PickOne\Hymer\Database\Types\Common\CharType;
+use IMyxuan\Hymer\Database\Types\Common\CharType;
 
 class CharacterType extends CharType
 {

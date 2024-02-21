@@ -3,7 +3,7 @@
 Hymer is super easy to install. After creating your new Laravel application you can include the Hymer package with the following command:
 
 ```bash
-composer require pickone/hymer
+composer require imyxuan/hymer
 ```
 
 Next make sure to create a new database and add your database credentials to your .env file, you will also want to add your application URL in the `APP_URL` variable:
@@ -70,7 +70,7 @@ This section is meant for users who are installing Hymer on an already existing 
 The first thing you should do is publish the assets that come with Hymer. You can do that by running the following commands:
 
 ```bash
-php artisan vendor:publish --provider="PickOne\Hymer\HymerServiceProvider"
+php artisan vendor:publish --provider="IMyxuan\Hymer\HymerServiceProvider"
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
 ```
 
@@ -80,12 +80,12 @@ Next, call `php artisan migrate` to migrate all Hymer table.
 If you want to change migrations, for example to use a different table for users, don't migrate. Instead copy Hymers migrations to `database/migrations`, make your changes, turn off the config option `database.autoload_migrations` and then migrate.
 {% endhint %}
 
-Now, open your User-Model \(usually `app/User.php`\) and make the class extend `\PickOne\Hymer\Models\User` instead of `Authenticatable`.
+Now, open your User-Model \(usually `app/User.php`\) and make the class extend `\IMyxuan\Hymer\Models\User` instead of `Authenticatable`.
 
 ```php
 <?php
 
-class User extends \PickOne\Hymer\Models\User
+class User extends \IMyxuan\Hymer\Models\User
 {
     // ...
 }

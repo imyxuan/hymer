@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Http\Controllers;
+namespace IMyxuan\Hymer\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
-use PickOne\Hymer\Events\MediaFileAdded;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Events\MediaFileAdded;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class HymerMediaController extends Controller
 {

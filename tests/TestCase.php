@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Orchestra\Testbench\BrowserKit\TestCase as OrchestraTestCase;
-use PickOne\Hymer\Models\User;
-use PickOne\Hymer\HymerServiceProvider;
+use IMyxuan\Hymer\Models\User;
+use IMyxuan\Hymer\HymerServiceProvider;
 
 class TestCase extends OrchestraTestCase
 {

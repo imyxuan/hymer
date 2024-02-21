@@ -1,7 +1,7 @@
 
 <?php
 
-namespace PickOne\Hymer\Tests\Stubs\Widgets;
+namespace IMyxuan\Hymer\Tests\Stubs\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 

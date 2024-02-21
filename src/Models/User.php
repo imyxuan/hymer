@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use PickOne\Hymer\Contracts\User as UserContract;
-use PickOne\Hymer\Tests\Database\Factories\UserFactory;
-use PickOne\Hymer\Traits\HymerUser;
+use IMyxuan\Hymer\Contracts\User as UserContract;
+use IMyxuan\Hymer\Tests\Database\Factories\UserFactory;
+use IMyxuan\Hymer\Traits\HymerUser;
 use function Psy\debug;
 
 class User extends Authenticatable implements UserContract

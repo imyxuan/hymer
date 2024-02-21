@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer;
+namespace IMyxuan\Hymer;
 
 use Arrilot\Widgets\Facade as Widget;
 use Illuminate\Database\Eloquent\Collection;
@@ -10,26 +10,26 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use PickOne\Hymer\Actions\DeleteAction;
-use PickOne\Hymer\Actions\EditAction;
-use PickOne\Hymer\Actions\RestoreAction;
-use PickOne\Hymer\Actions\ViewAction;
-use PickOne\Hymer\Events\AlertsCollection;
-use PickOne\Hymer\FormFields\After\HandlerInterface as AfterHandlerInterface;
-use PickOne\Hymer\FormFields\HandlerInterface;
-use PickOne\Hymer\Models\Category;
-use PickOne\Hymer\Models\DataRow;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\Menu;
-use PickOne\Hymer\Models\MenuItem;
-use PickOne\Hymer\Models\Page;
-use PickOne\Hymer\Models\Permission;
-use PickOne\Hymer\Models\Post;
-use PickOne\Hymer\Models\Role;
-use PickOne\Hymer\Models\Setting;
-use PickOne\Hymer\Models\Translation;
-use PickOne\Hymer\Models\User;
-use PickOne\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Actions\DeleteAction;
+use IMyxuan\Hymer\Actions\EditAction;
+use IMyxuan\Hymer\Actions\RestoreAction;
+use IMyxuan\Hymer\Actions\ViewAction;
+use IMyxuan\Hymer\Events\AlertsCollection;
+use IMyxuan\Hymer\FormFields\After\HandlerInterface as AfterHandlerInterface;
+use IMyxuan\Hymer\FormFields\HandlerInterface;
+use IMyxuan\Hymer\Models\Category;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\Menu;
+use IMyxuan\Hymer\Models\MenuItem;
+use IMyxuan\Hymer\Models\Page;
+use IMyxuan\Hymer\Models\Permission;
+use IMyxuan\Hymer\Models\Post;
+use IMyxuan\Hymer\Models\Role;
+use IMyxuan\Hymer\Models\Setting;
+use IMyxuan\Hymer\Models\Translation;
+use IMyxuan\Hymer\Models\User;
+use IMyxuan\Hymer\Traits\Translatable;
 
 class Hymer
 {
@@ -307,7 +307,7 @@ class Hymer
 
             // Loop through all the packages and get the version of hymer
             foreach ($file->packages as $package) {
-                if ($package->name == 'pickone/hymer') {
+                if ($package->name == 'imyxuan/hymer') {
                     $this->version = $package->version;
                     break;
                 }

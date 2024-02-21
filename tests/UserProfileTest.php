@@ -1,13 +1,13 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use PickOne\Hymer\Models\Role;
-use PickOne\Hymer\Models\User;
+use IMyxuan\Hymer\Models\Role;
+use IMyxuan\Hymer\Models\User;
 
 class UserProfileTest extends TestCase
 {
@@ -99,11 +99,11 @@ class UserProfileTest extends TestCase
 
     public function testCanEditUserEmailWithEditorPermissions()
     {
-        $user = \PickOne\Hymer\Models\User::factory()->for(\PickOne\Hymer\Models\Role::factory())->create();
+        $user = \IMyxuan\Hymer\Models\User::factory()->for(\IMyxuan\Hymer\Models\Role::factory())->create();
         $editPageForTheCurrentUser = route('hymer.users.edit', [$user->id]);
         // add permissions which reflect a possible editor role
         // without permissions to edit  users
-        $user->role->permissions()->attach(\PickOne\Hymer\Models\Permission::whereIn('key', [
+        $user->role->permissions()->attach(\IMyxuan\Hymer\Models\Permission::whereIn('key', [
             'browse_admin',
             'browse_users',
         ])->get()->pluck('id')->all());

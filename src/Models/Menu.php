@@ -1,12 +1,12 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use PickOne\Hymer\Events\MenuDisplay;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Events\MenuDisplay;
+use IMyxuan\Hymer\Facades\Hymer;
 
 /**
  * @todo: Refactor this class by using something like MenuBuilder Helper.

@@ -13,7 +13,7 @@ You can add your own buttons very easily. First we will create an Action-class w
 
 namespace App\Actions;
 
-use PickOne\Hymer\Actions\AbstractAction;
+use IMyxuan\Hymer\Actions\AbstractAction;
 
 class MyAction extends AbstractAction
 {
@@ -55,7 +55,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Events\Dispatcher;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class AppServiceProvider extends ServiceProvider
 {

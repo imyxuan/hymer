@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Traits;
+namespace IMyxuan\Hymer\Traits;
 
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 /**
  * @property  \Illuminate\Database\Eloquent\Collection  roles

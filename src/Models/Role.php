@@ -1,11 +1,11 @@
 <?php
 
-namespace PickOne\Hymer\Models;
+namespace IMyxuan\Hymer\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Tests\Database\Factories\RoleFactory;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Tests\Database\Factories\RoleFactory;
 
 class Role extends Model
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Common;
+namespace IMyxuan\Hymer\Database\Types\Common;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 class CharType extends Type
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Widgets;
+namespace IMyxuan\Hymer\Widgets;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 
 class UserDimmer extends BaseDimmer
 {

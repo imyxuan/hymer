@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Database\Types\Mysql;
+namespace IMyxuan\Hymer\Database\Types\Mysql;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Illuminate\Support\Facades\DB;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 class EnumType extends Type
 {

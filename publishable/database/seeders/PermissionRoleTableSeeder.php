@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Permission;
-use PickOne\Hymer\Models\Role;
+use IMyxuan\Hymer\Models\Permission;
+use IMyxuan\Hymer\Models\Role;
 
 class PermissionRoleTableSeeder extends Seeder
 {

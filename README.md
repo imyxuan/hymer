@@ -3,9 +3,9 @@
 <p align="center"><a href="https://github.com/thedevdojo/wave" target="_blank"><img src="https://cdn.devdojo.com/images/april2021/learnmore-wave.png" height="auto" width="100%"></a></p>
 
 <p align="center">
-<a href="https://packagist.org/packages/pickone/hymer"><img src="https://poser.pugx.org/pickone/hymer/downloads.svg?format=flat" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/pickone/hymer"><img src="https://poser.pugx.org/pickone/hymer/v/stable.svg?format=flat" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/pickone/hymer"><img src="https://poser.pugx.org/pickone/hymer/license.svg?format=flat" alt="License"></a>
+<a href="https://packagist.org/packages/imyxuan/hymer"><img src="https://poser.pugx.org/imyxuan/hymer/downloads.svg?format=flat" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/imyxuan/hymer"><img src="https://poser.pugx.org/imyxuan/hymer/v/stable.svg?format=flat" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/imyxuan/hymer"><img src="https://poser.pugx.org/imyxuan/hymer/license.svg?format=flat" alt="License"></a>
 <a href="https://github.com/larapack/awesome-hymer"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Hymer"></a>
 </p>
 
@@ -35,7 +35,7 @@ Laravel Admin & BREAD System (Browse, Read, Edit, Add, & Delete), supporting Lar
 After creating your new Laravel application you can include the Hymer package with the following command:
 
 ```bash
-composer require pickone/hymer
+composer require imyxuan/hymer
 ```
 
 ### 2. Add the DB Credentials & APP_URL

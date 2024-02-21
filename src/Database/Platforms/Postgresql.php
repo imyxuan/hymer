@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Database\Platforms;
+namespace IMyxuan\Hymer\Database\Platforms;
 
 use Illuminate\Support\Collection;
 

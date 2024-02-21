@@ -1,8 +1,8 @@
 <?php
 
-namespace PickOne\Hymer\Alert\Components;
+namespace IMyxuan\Hymer\Alert\Components;
 
-use PickOne\Hymer\Alert;
+use IMyxuan\Hymer\Alert;
 
 abstract class AbstractComponent implements ComponentInterface
 {

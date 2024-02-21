@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Str;
-use PickOne\Hymer\Events\Routing;
-use PickOne\Hymer\Events\RoutingAdmin;
-use PickOne\Hymer\Events\RoutingAdminAfter;
-use PickOne\Hymer\Events\RoutingAfter;
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Events\Routing;
+use IMyxuan\Hymer\Events\RoutingAdmin;
+use IMyxuan\Hymer\Events\RoutingAdminAfter;
+use IMyxuan\Hymer\Events\RoutingAfter;
+use IMyxuan\Hymer\Facades\Hymer;
 
 /*
 |--------------------------------------------------------------------------

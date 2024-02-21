@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Database\Schema;
+namespace IMyxuan\Hymer\Database\Schema;
 
 use Doctrine\DBAL\Schema\Column as DoctrineColumn;
 use Doctrine\DBAL\Types\Type as DoctrineType;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 abstract class Column
 {

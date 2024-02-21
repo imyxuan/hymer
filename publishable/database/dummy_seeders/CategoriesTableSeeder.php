@@ -3,12 +3,12 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PickOne\Hymer\Models\Category;
-use PickOne\Hymer\Models\DataRow;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\Menu;
-use PickOne\Hymer\Models\MenuItem;
-use PickOne\Hymer\Models\Permission;
+use IMyxuan\Hymer\Models\Category;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\Menu;
+use IMyxuan\Hymer\Models\MenuItem;
+use IMyxuan\Hymer\Models\Permission;
 
 class CategoriesTableSeeder extends Seeder
 {
@@ -27,7 +27,7 @@ class CategoriesTableSeeder extends Seeder
                 'display_name_singular' => __('hymer::seeders.data_types.category.singular'),
                 'display_name_plural'   => __('hymer::seeders.data_types.category.plural'),
                 'icon'                  => 'hymer-categories',
-                'model_name'            => 'PickOne\\Hymer\\Models\\Category',
+                'model_name'            => 'IMyxuan\\Hymer\\Models\\Category',
                 'controller'            => '',
                 'generate_permissions'  => 1,
                 'description'           => '',

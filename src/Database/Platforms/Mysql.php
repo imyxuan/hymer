@@ -1,9 +1,9 @@
 <?php
 
-namespace PickOne\Hymer\Database\Platforms;
+namespace IMyxuan\Hymer\Database\Platforms;
 
 use Illuminate\Support\Collection;
-use PickOne\Hymer\Database\Types\Type;
+use IMyxuan\Hymer\Database\Types\Type;
 
 abstract class Mysql extends Platform
 {

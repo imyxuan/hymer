@@ -20,7 +20,7 @@ First you need to define some `locales` in your `config/hymer.php` file and `ena
 After that you need to include the `Translatable` Trait in your model and define the translatable attributes:
 
 ```php
-use PickOne\Hymer\Traits\Translatable;
+use IMyxuan\Hymer\Traits\Translatable;
 class Post extends Model
 {
     use Translatable;

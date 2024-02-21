@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Database\Schema;
+namespace IMyxuan\Hymer\Database\Schema;
 
 use Doctrine\DBAL\Schema\ForeignKeyConstraint as DoctrineForeignKey;
 

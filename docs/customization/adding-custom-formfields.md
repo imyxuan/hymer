@@ -9,7 +9,7 @@ First we create a new class in our project \(it doesn't matter where it is place
 
 namespace App\FormFields;
 
-use PickOne\Hymer\FormFields\AbstractHandler;
+use IMyxuan\Hymer\FormFields\AbstractHandler;
 
 class NumberFormField extends AbstractHandler
 {
@@ -51,7 +51,7 @@ When we are done with our view, we will tell Hymer that we have a new form field
 
 namespace App\Providers;
 
-use PickOne\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Facades\Hymer;
 use App\FormFields\NumberFormField;
 use Illuminate\Support\ServiceProvider;
 

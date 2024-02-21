@@ -1,16 +1,16 @@
 <?php
 
-namespace PickOne\Hymer\Tests;
+namespace IMyxuan\Hymer\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use PickOne\Hymer\Http\Controllers\HymerBaseController;
-use PickOne\Hymer\Models\DataRow;
-use PickOne\Hymer\Models\DataType;
-use PickOne\Hymer\Models\Post;
-use PickOne\Hymer\Models\User;
+use IMyxuan\Hymer\Http\Controllers\HymerBaseController;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
+use IMyxuan\Hymer\Models\Post;
+use IMyxuan\Hymer\Models\User;
 
 class SearchTest extends TestCase
 {
@@ -132,7 +132,7 @@ class SearchTest extends TestCase
             'type' => 'relationship',
             'display_name' => 'Author',
             'details' => [
-                'model' => 'PickOne\Hymer\Models\User',
+                'model' => 'IMyxuan\Hymer\Models\User',
                 'table' => 'users',
                 'type' => 'belongsTo',
                 'column' => 'author_id',

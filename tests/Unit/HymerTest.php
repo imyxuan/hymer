@@ -1,10 +1,10 @@
 <?php
 
-namespace PickOne\Hymer\Tests\Unit;
+namespace IMyxuan\Hymer\Tests\Unit;
 
 use Illuminate\Support\Facades\Config;
-use PickOne\Hymer\Facades\Hymer;
-use PickOne\Hymer\Tests\TestCase;
+use IMyxuan\Hymer\Facades\Hymer;
+use IMyxuan\Hymer\Tests\TestCase;
 
 class HymerTest extends TestCase
 {
@@ -17,8 +17,8 @@ class HymerTest extends TestCase
     public function testDimmersReturnsCollectionOfConfiguredWidgets()
     {
         Config::set('hymer.dashboard.widgets', [
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
         ]);
 
         $dimmers = Hymer::dimmers();
@@ -35,9 +35,9 @@ class HymerTest extends TestCase
     public function testDimmersReturnsCollectionOfConfiguredWidgetsWhichShouldBeDisplayed()
     {
         Config::set('hymer.dashboard.widgets', [
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\InAccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\InAccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\InAccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\InAccessibleDimmer',
         ]);
 
         $dimmers = Hymer::dimmers();
@@ -54,11 +54,11 @@ class HymerTest extends TestCase
     public function testCreateEnoughDimmerCollectionsToContainAllAvailableDimmers()
     {
         Config::set('hymer.dashboard.widgets', [
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
-            'PickOne\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
+            'IMyxuan\\Hymer\\Tests\\Stubs\\Widgets\\AccessibleDimmer',
         ]);
 
         $dimmers = Hymer::dimmers();

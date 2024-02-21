@@ -1,6 +1,6 @@
 <?php
 
-namespace PickOne\Hymer\Actions;
+namespace IMyxuan\Hymer\Actions;
 
 class DeleteAction extends AbstractAction
 {
