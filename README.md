@@ -1,7 +1,3 @@
-<p align="center"><a href="https://hymer.devdojo.com" target="_blank"><img width="400" src="https://s3.amazonaws.com/thecontrolgroup/hymer.png"></a></p>
-
-<p align="center"><a href="https://github.com/thedevdojo/wave" target="_blank"><img src="https://cdn.devdojo.com/images/april2021/learnmore-wave.png" height="auto" width="100%"></a></p>
-
 <p align="center">
 <a href="https://packagist.org/packages/imyxuan/hymer"><img src="https://poser.pugx.org/imyxuan/hymer/downloads.svg?format=flat" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/imyxuan/hymer"><img src="https://poser.pugx.org/imyxuan/hymer/v/stable.svg?format=flat" alt="Latest Stable Version"></a>
@@ -9,24 +5,12 @@
 <a href="https://github.com/larapack/awesome-hymer"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Hymer"></a>
 </p>
 
-# **V**oyager - The Missing Laravel Admin
-Made with ❤️ by [The Control Group](https://www.thecontrolgroup.com)
-
-![Hymer Screenshot](https://s3.amazonaws.com/thecontrolgroup/hymer-screenshot.png)
-
-Website & Documentation: https://hymer.devdojo.com/
-
-Video Tutorial Here: https://hymer.devdojo.com/academy/
-
-Join our Slack chat: https://hymer-slack-invitation.herokuapp.com/
-
-View the Hymer Cheat Sheet: https://hymer-cheatsheet.ulties.com/
+# **H**ymer - The Missing Laravel Admin
+Made with ❤️ by [Mac](https://www.imyxuan.site)
 
 <hr>
 
-Laravel Admin & BREAD System (Browse, Read, Edit, Add, & Delete), supporting Laravel 8 and newer!
-
-> Want to use Laravel 6 or 7? Use [Hymer 1.5](https://github.com/the-control-group/hymer/tree/1.5)
+Laravel Admin & BREAD System (Browse, Read, Edit, Add, & Delete), supporting Laravel 10 and newer!
 
 ## Installation Steps
 
