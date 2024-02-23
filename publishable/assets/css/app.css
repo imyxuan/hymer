@@ -327,6 +327,19 @@ body {
     width: 200px;
 }
 
+#search-input > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#search-input > div:first-child {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+#search-input > div:last-child {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
 .row.no-margin-bottom > [class*="col-"] {
     margin-bottom: 10px;
 }
@@ -1042,19 +1055,8 @@ a:hover {
     box-shadow: none;
 }
 
-.pagination {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.pagination li:first-child > a, .pagination li:first-child span {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-.pagination li:last-child > a, .pagination li:last-child span {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+.paginate-buttons > nav > div > div:first-child {
+    display: none !important;
 }
 
 .form-control {
@@ -3501,21 +3503,6 @@ html, body {
     color: #FFF;
 }
 
-.hymer .pagination > li > a {
-    color: #353d47;
-}
-
-.hymer .pagination .active > a,
-.hymer .pagination .active > a:focus,
-.hymer .pagination .active > a:hover,
-.hymer .pagination .active span,
-.hymer .pagination .active > span:focus,
-.hymer .pagination .active > span:hover {
-    background-color: #353d47;
-    border-color: #353d47;
-    color: #FFF;
-}
-
 .hymer .modal.modal-primary .modal-header {
     background-color: #353d47;
     color: #FFF;
@@ -4525,20 +4512,6 @@ p#the_plugin_name {
 
 .hymer .panel.panel-warning, .hymer .panel.panel-primary, .hymer .panel.panel-info {
     border: 0;
-}
-
-.hymer .pagination .active > a,
-.hymer .pagination .active > a:focus,
-.hymer .pagination .active > a:hover,
-.hymer .pagination .active span,
-.hymer .pagination .active > span:focus,
-.hymer .pagination .active > span:hover {
-    z-index: 3;
-    color: #fff;
-    cursor: default;
-    background-color: #62a8ea;
-    border-color: #62a8ea;
-    outline: none;
 }
 
 .pagination li > a:focus, .pagination li > a:hover, .pagination li > span:focus, .pagination li > span:hover {
@@ -5859,3 +5832,7 @@ div.cropper-container img {
 }
 
 /********** END DataTables Style **********/
+
+#bread-items > .row {
+    margin: 0;
+}

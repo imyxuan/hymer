@@ -50,10 +50,10 @@
                 <div class="panel panel-bordered">
                     <div class="panel-body">
                         @if ($isServerSide)
-                            <form method="get" class="form-search">
-                                <div id="search-input">
+                            <form method="get" class="form-search" id="searchFrom">
+                                <div id="search-input" class="row mb-3">
                                     <div class="col-2">
-                                        <select id="search_key" name="key">
+                                        <select class="form-select" id="search_key" name="key">
                                             @foreach($searchNames as $key => $name)
                                                 <option
                                                     value="{{ $key }}"
@@ -63,7 +63,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-1">
                                         <select id="filter" name="filter">
                                             <option value="contains"
                                                     @if($search->filter == "contains") selected @endif>
@@ -75,15 +75,18 @@
                                             </option>
                                         </select>
                                     </div>
-                                    <div class="input-group col-md-12">
-                                        <input type="text" class="form-control"
-                                               placeholder="{{ __('hymer::generic.search') }}" name="s"
-                                               value="{{ $search->value }}">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-info btn-lg" type="submit">
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control"
+                                                   placeholder="{{ __('hymer::generic.search') }}"
+                                                   aria-label="Recipient's username"
+                                                   aria-describedby="basic-addon2"
+                                                   value="{{ $search->value }}"
+                                            >
+                                            <div class="input-group-text" id="basic-addon2">
                                                 <i class="hymer-search"></i>
-                                            </button>
-                                        </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 @if (Request::has('sort_order') && Request::has('order_by'))
@@ -288,7 +291,7 @@
                             </table>
                         </div>
                         @if ($isServerSide)
-                            <div class="pull-left">
+                            <div class="float-start">
                                 <div role="status" class="show-res" aria-live="polite">{{ trans_choice(
                                     'hymer::generic.showing_entries', $dataTypeContent->total(), [
                                         'from' => $dataTypeContent->firstItem(),
@@ -296,15 +299,16 @@
                                         'all' => $dataTypeContent->total()
                                     ]) }}</div>
                             </div>
-                            <div class="float-end">
-                                {{ $dataTypeContent->appends([
-                                    's' => $search->value,
-                                    'filter' => $search->filter,
-                                    'key' => $search->key,
-                                    'order_by' => $orderBy,
-                                    'sort_order' => $sortOrder,
-                                    'showSoftDeleted' => $showSoftDeleted,
-                                ])->links() }}
+                            <div class="float-end paginate-buttons">
+                                {{ $dataTypeContent->links() }}
+{{--                                {{ $dataTypeContent->appends([--}}
+{{--                                    's' => $search->value,--}}
+{{--                                    'filter' => $search->filter,--}}
+{{--                                    'key' => $search->key,--}}
+{{--                                    'order_by' => $orderBy,--}}
+{{--                                    'sort_order' => $sortOrder,--}}
+{{--                                    'showSoftDeleted' => $showSoftDeleted,--}}
+{{--                                ])->links() }}--}}
                             </div>
                         @endif
                     </div>
@@ -359,6 +363,9 @@
     @endif
     <script>
         $(document).ready(function () {
+            $(document).on('click', '#submitSearch', event => {
+                $('#searchFrom').submit()
+            })
             @if (!$dataType->server_side)
                 var table = $('#dataTable').DataTable({!! json_encode(
                     array_merge([
@@ -372,7 +379,8 @@
                 , true) !!});
             @else
                 $('#search-input select').select2({
-                    minimumResultsForSearch: Infinity
+                    minimumResultsForSearch: Infinity,
+                    width: '100%',
                 });
             @endif
 

@@ -79,7 +79,7 @@ class HymerBreadController extends Controller
             'display_name_plural' => Str::plural($displayName),
             'model_name' => $modelNamespace . Str::studly(Str::singular($table)),
             'generate_permissions' => true,
-            'server_side' => false,
+            'server_side' => true,
         ];
     }
 

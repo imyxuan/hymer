@@ -129,9 +129,7 @@ class HymerServiceProvider extends ServiceProvider
 
         $this->bootTranslatorCollectionMacros();
 
-        if (method_exists('Paginator', 'useBootstrap')) {
-            Paginator::useBootstrap();
-        }
+        Paginator::useBootstrapFive();
     }
 
     /**

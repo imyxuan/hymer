@@ -107,4 +107,5 @@ return [
     'whoopsie'               => '哇哦!',
     'yes'                    => '是',
     'yes_please'             => '是的，就这样做',
+    'contains'               => '包含',
 ];
