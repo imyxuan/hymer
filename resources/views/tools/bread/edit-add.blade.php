@@ -696,11 +696,6 @@
         /********** Relationship functionality **********/
 
         $(function () {
-            $('.relationship_type').select2({})
-            $('.relationship_table').select2({})
-            $('.relationshipPivot select').select2({})
-            $('.new_relationship_field').select2({})
-            $('select.relationship_key').select2({})
             $('.relationship_type').change(function(){
                 $(this).parent().parent().parent().find('.belongsToManyShow, .belongsToShow, .hasOneShow, .hasManyShow').hide();
                 $(this).parent().parent().parent().find('.' + $(this).val() + 'Show').show();

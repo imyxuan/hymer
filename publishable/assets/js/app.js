@@ -83,14 +83,17 @@ $(document).ready(function () {
     });
 
     let $dropdownParent = $(document.body)
-    const $select2 = $('select.select2')
-    if ($select2.parents('.modal').length !== 0) {
-        $dropdownParent = $select2.parents('.modal')
-    }
-    $select2.select2({
-        dropdownParent: $dropdownParent,
-        width: '100%'
-    });
+    $('select.select2').each(function () {
+        console.log($(this))
+        if ($(this).parents('.modal').length !== 0) {
+            $dropdownParent = $(this).parents('.modal')
+        }
+        $(this).select2({
+            dropdownParent: $dropdownParent,
+            width: '100%'
+        });
+    })
+
     $('select.select2-ajax').each(function() {
         $(this).select2({
             width: '100%',

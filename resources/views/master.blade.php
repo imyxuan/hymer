@@ -247,12 +247,13 @@ if (Str::startsWith(Auth::user()->avatar, 'http://') || Str::startsWith(Auth::us
 </script>
 
 <script src="{{ hymer_asset('js/hymer-ace-editor.js') }}"></script>
+<script src="{{ hymer_asset('js/helper.js') }}"></script>
 <script src="{{ hymer_asset('js/app.js') }}"></script>
 
 <script>
     @if(Session::has('alerts'))
         let alerts = {!! json_encode(Session::get('alerts')) !!};
-        helpers.displayAlerts(alerts, toastr);
+        window.helpers.displayAlerts(alerts, toastr);
     @endif
 
     @if(Session::has('message'))
