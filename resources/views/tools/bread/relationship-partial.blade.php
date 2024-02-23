@@ -11,7 +11,7 @@
     );
 @endphp
 <div class="row row-dd row-dd-relationship">
-    <div class="col-2">
+    <div class="col-2 position-relative">
         <h4>
             <i class="hymer-heart"></i>
             <strong>{{ $relationship->getTranslatedAttribute('display_name') }}</strong>
@@ -266,16 +266,20 @@
             </div>
             <br>
             @isset($relationshipDetails->taggable)
-                <label for="tableAllowTagging" class="relationship_taggable">
-                    {{__('hymer::database.relationship.allow_tagging')}}
-                </label>
-                <div class="form-check form-switch d-flex align-items-center relationship_taggable">
-                    <input
-                        class="form-check-input"
-                        name="relationship_taggable_{{ $relationship['field'] }}"
-                        type="checkbox" id="tableAllowTagging"
-                        {{$relationshipDetails->taggable == 'on' ? 'checked' : ''}}
-                    >
+                <div class="relationship_taggable">
+                    <div class="d-flex align-items-center" style="height: 100%">
+                        <label for="tableAllowTagging">
+                            {{__('hymer::database.relationship.allow_tagging')}}
+                        </label>
+                        <div class="form-check form-switch d-flex align-items-center">
+                            <input
+                                class="form-check-input"
+                                name="relationship_taggable_{{ $relationship['field'] }}"
+                                type="checkbox" id="tableAllowTagging"
+                                {{$relationshipDetails->taggable == 'on' ? 'checked' : ''}}
+                            >
+                        </div>
+                    </div>
                 </div>
             @endisset
         </div>

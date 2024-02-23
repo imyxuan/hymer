@@ -506,8 +506,7 @@
                                         @endif
                                         <input
                                             type="text" class="form-control"
-                                            value="
-                                                {{ $dataRow->display_name ?? ucwords(str_replace('_', ' ', $data['field'])) }}"
+                                            value="{{ $dataRow->display_name ?? ucwords(str_replace('_', ' ', $data['field'])) }}"
                                             name="field_display_name_{{ $data['field'] }}">
                                     </div>
                                     <div class="col-4">
@@ -697,6 +696,11 @@
         /********** Relationship functionality **********/
 
         $(function () {
+            $('.relationship_type').select2({})
+            $('.relationship_table').select2({})
+            $('.relationshipPivot select').select2({})
+            $('.new_relationship_field').select2({})
+            $('select.relationship_key').select2({})
             $('.relationship_type').change(function(){
                 $(this).parent().parent().parent().find('.belongsToManyShow, .belongsToShow, .hasOneShow, .hasManyShow').hide();
                 $(this).parent().parent().parent().find('.' + $(this).val() + 'Show').show();
@@ -743,7 +747,7 @@
                 $(this).toggleClass('open')
                 if($(this).hasClass('open')){
                     $(this).parent().parent().find('.hymer-relationship-details').slideDown()
-                    populateRowsFromTable($(this).parent().parent().find('select.relationship_table'))
+                    populateRowsFromTable($(this).parent().parent().parent().find('select.relationship_table'))
                 } else {
                     $(this).parent().parent().find('.hymer-relationship-details').slideUp()
                 }

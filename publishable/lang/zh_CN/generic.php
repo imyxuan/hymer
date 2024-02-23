@@ -102,7 +102,7 @@ return [
     'updated_order'          => '排序已更新',
     'upload'                 => '上传',
     'url'                    => '网址',
-    'view'                   => '视图',
+    'view'                   => '详情',
     'viewing'                => '查看',
     'whoopsie'               => '哇哦!',
     'yes'                    => '是',

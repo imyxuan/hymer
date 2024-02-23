@@ -64,7 +64,9 @@
                         }
                         @endphp
                         <div class="panel-heading">
-                            <h3 class="panel-title">{{ $row->getTranslatedAttribute('display_name') }}</h3>
+                            <h3 class="panel-title @if($row->type == 'hidden') text-primary @endif">
+                                {{ $row->getTranslatedAttribute('display_name') }}
+                            </h3>
                         </div>
 
                         <div class="panel-body">
@@ -127,6 +129,10 @@
                                 @else
                                 {{ $dataTypeContent->{$row->field} }}
                                 @endif
+                            @elseif($row->type == 'multiple_checkbox')
+                                @foreach(json_decode($dataTypeContent->{$row->field}) as $key => $val)
+                                    {{ $val }}
+                                @endforeach
                             @elseif($row->type == 'color')
                                 <span class="badge badge-lg" style="background-color: {{ $dataTypeContent->{$row->field} }}">{{ $dataTypeContent->{$row->field} }}</span>
                             @elseif($row->type == 'coordinates')

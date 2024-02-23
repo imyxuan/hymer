@@ -323,6 +323,10 @@ body {
     outline: none;
 }
 
+.img-responsive {
+    width: 200px;
+}
+
 .row.no-margin-bottom > [class*="col-"] {
     margin-bottom: 10px;
 }

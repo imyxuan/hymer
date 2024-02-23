@@ -97,9 +97,9 @@ return [
 
     'multilingual' => [
         /*
-         * Set whether or not the multilingual is supported by the BREAD input.
+         * Set whether the multilingual is supported by the BREAD input.
          */
-        'enabled' => true,
+        'enabled' => false,
 
         /*
          * Select default language
