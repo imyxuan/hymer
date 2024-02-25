@@ -52,7 +52,11 @@ class HymerBaseController extends Controller
         $searchNames = [];
         if ($dataType->server_side) {
             $searchNames = $dataType->browseRows->mapWithKeys(function ($row) {
-                return [$row['field'] => $row->getTranslatedAttribute('display_name')];
+                if ($row['type'] == 'relationship') {
+                    return [$row['details']->label => $row->getTranslatedAttribute('display_name')];
+                } else {
+                    return [$row['field'] => $row->getTranslatedAttribute('display_name')];
+                }
             });
         }
 

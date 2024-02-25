@@ -14,6 +14,7 @@
         <link rel="shortcut icon" href="{{ Hymer::image($admin_favicon) }}" type="image/png">
     @endif
 
+    @if(config('app.debug'))
     <!-- Perfect Scrollbar -->
     <link rel="stylesheet" href="{{ hymer_asset('libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css') }}">
 
@@ -46,6 +47,10 @@
 
     <!-- EasyMDE -->
     <link rel="stylesheet" href="{{ hymer_asset('libs/easymde-2.18.0/css/easymde.css') }}">
+    @else
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{{ hymer_asset('css/libs.css') }}">
+    @endif
 
     <!-- Font CSS -->
     <link rel="stylesheet" href="{{ hymer_asset('css/font.css') }}">
@@ -155,12 +160,15 @@ if (Str::startsWith(Auth::user()->avatar, 'http://') || Str::startsWith(Auth::us
 </script>
 
 <!-- Javascript Libs -->
-
+@if(config('app.debug'))
 <!-- jQuery -->
 <script src="{{ hymer_asset('libs/jquery-3.7.1/jquery.min.js') }}"></script>
 
+<!-- Popper -->
+<script src="{{ hymer_asset('libs/popper-2.11.8/popper.min.js') }}"></script>
+
 <!-- Bootstrap -->
-<script src="{{ hymer_asset('libs/bootstrap-5.3.2/js/bootstrap.bundle.js') }}"></script>
+<script src="{{ hymer_asset('libs/bootstrap-5.3.2/js/bootstrap.min.js') }}"></script>
 
 <!-- jQuery Match Height -->
 <script src="{{ hymer_asset('libs/jquery-match-height-0.7.2/jquery.matchHeight.min.js') }}"></script>
@@ -176,7 +184,9 @@ if (Str::startsWith(Auth::user()->avatar, 'http://') || Str::startsWith(Auth::us
 <script src="{{ hymer_asset('libs/select2-4.1.0/js/select2.min.js') }}"></script>
 
 <!-- Datetime Picker -->
-<script src="{{ hymer_asset('libs/tempus-dominus-6.9.5/js/tempus-dominus.min.js') }}"></script>
+<script src="{{ hymer_asset('libs/tempus-dominus-6.9.5/js/tempus-dominus.js') }}"></script>
+<script src="{{ hymer_asset('libs/tempus-dominus-6.9.5/plugins/customDateFormat.js') }}"></script>
+<script src="{{ hymer_asset('libs/tempus-dominus-6.9.5/plugins/bi-one.js') }}"></script>
 
 <!-- Toastr -->
 <script src="{{ hymer_asset('libs/toastr-2.1.1/toastr.min.js') }}"></script>
@@ -200,11 +210,12 @@ if (Str::startsWith(Auth::user()->avatar, 'http://') || Str::startsWith(Auth::us
 <!-- EasyMDE -->
 <script src="{{ hymer_asset('libs/easymde-2.18.0/js/easymde.js') }}"></script>
 
-<!-- Multilingual -->
-<script src="{{ hymer_asset('js/multilingual.js') }}"></script>
-
 <!-- VueJs -->
 <script src="{{ hymer_asset('libs/vue-3.3.4/vue.global.js') }}"></script>
+@else
+<!-- Libs -->
+<script src="{{ hymer_asset('js/libs.js') }}"></script>
+@endif
 
 @include('hymer::media.manager')
 

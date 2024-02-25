@@ -78,12 +78,13 @@
                                     <div class="col-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control"
+                                                   name="s"
                                                    placeholder="{{ __('hymer::generic.search') }}"
                                                    aria-label="Recipient's username"
                                                    aria-describedby="basic-addon2"
                                                    value="{{ $search->value }}"
                                             >
-                                            <div class="input-group-text" id="basic-addon2">
+                                            <div class="input-group-text" id="search-submit">
                                                 <i class="hymer-search"></i>
                                             </div>
                                         </div>
@@ -363,7 +364,7 @@
     @endif
     <script>
         $(document).ready(function () {
-            $(document).on('click', '#submitSearch', event => {
+            $(document).on('click', '#search-submit', event => {
                 $('#searchFrom').submit()
             })
             @if (!$dataType->server_side)

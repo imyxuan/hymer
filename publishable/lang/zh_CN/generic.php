@@ -93,7 +93,7 @@ return [
     'successfully_restored'  => '恢复成功',
     'successfully_updated'   => '更新成功',
     'successfully_created'   => '创建成功',
-    'sweet_success'          => 'Sweet Success!',
+    'sweet_success'          => '完美!',
     'timestamp'              => '时间戳',
     'title'                  => '标题',
     'type'                   => '类型',

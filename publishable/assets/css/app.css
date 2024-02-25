@@ -5868,3 +5868,7 @@ div.cropper-container img {
 #bread-items > .row {
     margin: 0;
 }
+
+#uploadProgress > .progress-bar {
+    height: 15px;
+}

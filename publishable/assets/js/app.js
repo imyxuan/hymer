@@ -171,11 +171,39 @@ $(document).ready(function () {
     $('.match-height').matchHeight();
 
     new DataTable('.datatable', {})
-
+    tempusDominus.extend(window.tempusDominus.plugins.bi_one.load)
     const $datepickerItems = $('.datepicker')
     if ($datepickerItems.length > 0) {
         for (let i = 0; i < $datepickerItems.length; i++) {
-            new window.tempusDominus.TempusDominus($datepickerItems[i], {})
+            let element = $datepickerItems[i]
+            const type = $(element).data('type')
+            let viewMode = 'calendar'
+            let defaultDate = $(element).val()
+            let format = 'yyyy-MM-dd'
+            if (type === 'datetime') {
+                format = 'yyyy-MM-dd HH:mm:ss'
+                defaultDate = $(element).data('value')
+            }
+            if (type === 'time') {
+                format = 'HH:mm:ss'
+                viewMode = 'clock'
+            }
+            if (!defaultDate) {
+                defaultDate = new Date()
+            } else {
+                defaultDate = new Date(defaultDate)
+            }
+            element.type = 'text'
+            new tempusDominus.TempusDominus(element, {
+                defaultDate,
+                display: {
+                    viewMode,
+                },
+                localization: {
+                    locale: $('html').attr('lang').replace('_', '-'),
+                    format: format,
+                }
+            })
         }
     }
 

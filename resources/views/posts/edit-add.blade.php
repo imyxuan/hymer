@@ -353,10 +353,13 @@
             //Init datepicker for date fields if data-datepicker attribute defined
             //or if browser does not handle date inputs
             $('.form-group input[type=date]').each(function (idx, elt) {
-                if (elt.type != 'date' || elt.hasAttribute('data-datepicker')) {
-                    elt.type = 'text';
-                    $(elt).datetimepicker($(elt).data('datepicker'));
-                }
+                elt.type = 'text'
+                const picker = new tempusDominus.TempusDominus(elt, {
+                    defaultDate: $(elt).data('datepicker'),
+                    localization: {
+                        format: 'yyyy-MM-dd',
+                    }
+                })
             });
 
             @if ($isModelTranslatable)
