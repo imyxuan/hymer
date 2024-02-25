@@ -64,7 +64,7 @@
                         }
                         @endphp
                         <div class="panel-heading">
-                            <h3 class="panel-title @if($row->type == 'hidden') text-primary @endif">
+                            <h3 class="panel-title">
                                 {{ $row->getTranslatedAttribute('display_name') }}
                             </h3>
                         </div>

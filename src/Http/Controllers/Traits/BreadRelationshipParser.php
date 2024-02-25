@@ -56,7 +56,7 @@ trait BreadRelationshipParser
     }
 
     /**
-     * Eagerload relationships.
+     * Eager load relationships.
      *
      * @param mixed    $dataTypeContent     Can be either an eloquent Model or Collection.
      * @param DataType $dataType
@@ -67,7 +67,7 @@ trait BreadRelationshipParser
      */
     protected function eagerLoadRelations($dataTypeContent, DataType $dataType, string $action, bool $isModelTranslatable)
     {
-        // Eagerload Translations
+        // Eager load Translations
         if (config('hymer.multilingual.enabled')) {
             // Check if BREAD is Translatable
             if ($isModelTranslatable) {

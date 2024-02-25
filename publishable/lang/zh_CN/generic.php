@@ -23,6 +23,8 @@ return [
     'click_here'             => '点击这里',
     'close'                  => '关闭',
     'compass'                => '指南针',
+    'contains'               => '包含',
+    'count'                  => '共',
     'created_at'             => '创建于',
     'custom'                 => '自定义',
     'dashboard'              => '控制面板',
@@ -58,6 +60,7 @@ return [
     'media'                  => '媒体',
     'menu_builder'           => '菜单生成器',
     'mimetype_not_allowed'   => '不允许此mimetype',
+    'more_info'              => '更多',
     'move'                   => '移动',
     'name'                   => '命名',
     'new'                    => '新',
@@ -107,5 +110,4 @@ return [
     'whoopsie'               => '哇哦!',
     'yes'                    => '是',
     'yes_please'             => '是的，就这样做',
-    'contains'               => '包含',
 ];

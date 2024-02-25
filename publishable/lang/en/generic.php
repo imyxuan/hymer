@@ -23,6 +23,8 @@ return [
     'click_here'             => 'Click Here',
     'close'                  => 'Close',
     'compass'                => 'Compass',
+    'contains'               => 'contains',
+    'count'                  => 'count',
     'created_at'             => 'Created at',
     'custom'                 => 'Custom',
     'dashboard'              => 'Dashboard',
@@ -61,6 +63,7 @@ return [
     'media'                  => 'Media',
     'menu_builder'           => 'Menu Builder',
     'mimetype_not_allowed'   => 'This mimetype is not allowed',
+    'more_info'              => 'More Info',
     'move'                   => 'Move',
     'name'                   => 'Name',
     'new'                    => 'New',
@@ -110,5 +113,4 @@ return [
     'whoopsie'               => 'Whoopsie!',
     'yes'                    => 'Yes',
     'yes_please'             => 'Yes, Please',
-    'contains'               => 'contains',
 ];

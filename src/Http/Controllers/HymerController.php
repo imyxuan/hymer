@@ -4,9 +4,11 @@ namespace IMyxuan\Hymer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use IMyxuan\Hymer\Models\DataType;
 use Intervention\Image\Constraint;
 use Intervention\Image\Facades\Image;
 use IMyxuan\Hymer\Facades\Hymer;
@@ -15,7 +17,14 @@ class HymerController extends Controller
 {
     public function index()
     {
-        return Hymer::view('hymer::index');
+        $dataTypes = DataType::where('id', '>', 3)->get();
+        foreach ($dataTypes as $dataType) {
+            $model = app($dataType->model_name);
+            $dataType['count'] = $model->count();
+        }
+        return Hymer::view('hymer::index', compact(
+            'dataTypes',
+        ));
     }
 
     public function logout()

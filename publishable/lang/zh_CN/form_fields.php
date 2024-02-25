@@ -18,7 +18,7 @@ return [
     'select_dropdown'          => '下拉选择',
     'select_multiple'          => '下拉多选',
     'text'                     => '文本输入框',
-    'text_area'                => 'Textarea',
+    'text_area'                => '多行文本框',
     'time'                     => '时间输入框',
     'timestamp'                => '时间日期输入框',
     'hidden'                   => '隐藏输入框',
