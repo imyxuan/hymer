@@ -80,7 +80,10 @@ return [
 
     'database' => [
         'tables' => [
-            'hidden' => ['migrations', 'data_rows', 'data_types', 'menu_items', 'password_resets', 'permission_role', 'personal_access_tokens', 'settings'],
+            'hidden' => [
+                'migrations', 'data_rows', 'data_types', 'menu_items', 'password_reset_tokens',
+                'permission_role', 'personal_access_tokens', 'settings', 'failed_jobs',
+            ],
         ],
         'autoload_migrations' => true,
     ],
@@ -192,15 +195,6 @@ return [
 
     'additional_js' => [
         //'js/custom.js',
-    ],
-
-    'googlemaps' => [
-        'key'    => env('GOOGLE_MAPS_KEY', ''),
-        'center' => [
-            'lat' => env('GOOGLE_MAPS_DEFAULT_CENTER_LAT', '32.715738'),
-            'lng' => env('GOOGLE_MAPS_DEFAULT_CENTER_LNG', '-117.161084'),
-        ],
-        'zoom' => env('GOOGLE_MAPS_DEFAULT_ZOOM', 11),
     ],
 
     /*

@@ -248,6 +248,7 @@ if (Str::startsWith(Auth::user()->avatar, 'http://') || Str::startsWith(Auth::us
 
 <script src="{{ hymer_asset('js/hymer-ace-editor.js') }}"></script>
 <script src="{{ hymer_asset('js/helper.js') }}"></script>
+<script src="{{ hymer_asset('js/multilingual.js') }}"></script>
 <script src="{{ hymer_asset('js/app.js') }}"></script>
 
 <script>

@@ -84,7 +84,6 @@ $(document).ready(function () {
 
     let $dropdownParent = $(document.body)
     $('select.select2').each(function () {
-        console.log($(this))
         if ($(this).parents('.modal').length !== 0) {
             $dropdownParent = $(this).parents('.modal')
         }
