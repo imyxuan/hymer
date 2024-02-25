@@ -69,31 +69,46 @@
                 @php
                     $relationshipData = (isset($data)) ? $data : $dataTypeContent;
                     $model = app($options->model);
-
-                    $selected_values = $model::where($options->column, '=', $relationshipData->{$options->key})->get()->map(function ($item, $key) use ($options) {
-                        return $item->{$options->label};
-                    })->all();
                 @endphp
 
                 @if($view == 'browse')
                     @php
-                        $string_values = implode(", ", $selected_values);
-                        if(mb_strlen($string_values) > 25){ $string_values = mb_substr($string_values, 0, 25) . '...'; }
+                        $count = $model->count()
                     @endphp
-                    @if(empty($selected_values))
+                    @if($count == 0)
                         <p>{{ __('hymer::generic.no_results') }}</p>
                     @else
-                        <p>{{ $string_values }}</p>
+                        <a href="#">{{ __('hymer::generic.count') }}: {{ $count }}</a>
                     @endif
                 @else
-                    @if(empty($selected_values))
+                    @php
+                        $items = $row->items;
+                        $dRows = $row->dataRows;
+                    @endphp
+                    @if(empty($items))
                         <p>{{ __('hymer::generic.no_results') }}</p>
                     @else
-                        <ul>
-                            @foreach($selected_values as $selected_value)
-                                <li>{{ $selected_value }}</li>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                @foreach($dRows as $dRow)
+                                <th>{{ $dRow->display_name }}</th>
+                                @endforeach
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($items as $item)
+                            <tr>
+                                @foreach($dRows as $dRow)
+                                    <td>{{ $item->{$dRow->field} }}</td>
+                                @endforeach
+                            </tr>
                             @endforeach
-                        </ul>
+                            </tbody>
+                        </table>
+                        <div>
+                            {{ $items->links() }}
+                        </div>
                     @endif
                 @endif
 

@@ -15,6 +15,8 @@ use IMyxuan\Hymer\Events\BreadDataUpdated;
 use IMyxuan\Hymer\Events\BreadImagesDeleted;
 use IMyxuan\Hymer\Facades\Hymer;
 use IMyxuan\Hymer\Http\Controllers\Traits\BreadRelationshipParser;
+use IMyxuan\Hymer\Models\DataRow;
+use IMyxuan\Hymer\Models\DataType;
 
 class HymerBaseController extends Controller
 {
@@ -254,8 +256,27 @@ class HymerBaseController extends Controller
         // Check if BREAD is Translatable
         $isModelTranslatable = is_bread_translatable($dataTypeContent);
 
-        // Eagerload Relations
+        // Eager load Relations
         $this->eagerLoadRelations($dataTypeContent, $dataType, 'read', $isModelTranslatable);
+
+        foreach ($dataType->readRows as $row) {
+            $details = $row->details;
+            if ($row->type == 'relationship' && $row->details->type == 'hasMany') {
+                $pageName = 'page' . $row->id;
+                $page = $request->get($pageName, 1);
+                $model = app($details->model);
+                $relationshipData = (isset($data)) ? $data : $dataTypeContent;
+                $relationshipItems = $model->where($details->column, $relationshipData->{$details->key})
+                    ->paginate(2, '*', $pageName, $page);
+                $row['items'] = $relationshipItems;
+                $dType = DataType::where('slug', $details->table)->first();
+                $row['dataRows'] = DataRow::where('data_type_id', $dType['id'])
+                    ->where('type', '!=', 'relationship')
+                    ->where('read', 1)
+                    ->orderBy('order')
+                    ->get();
+            }
+        }
 
         $view = 'hymer::bread.read';
 
