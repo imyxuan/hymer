@@ -219,11 +219,29 @@ $(document).ready(function () {
     /********** MARKDOWN EDITOR **********/
 
     $('textarea.easymde').each(function () {
-        var easymde = new EasyMDE({
-            element: this
-        });
-        easymde.render();
-    });
+        let type = $(this).data('type')
+        const params = {
+            element: this,
+        }
+        if (type === 'read') {
+            params.toolbar = false
+            params.status = false
+            params.spellChecker = false
+        }
+        let easymde = new EasyMDE(params)
+        if (type === 'read') {
+            easymde.codemirror.setOption('readOnly', true)
+            easymde.codemirror.setOption('spellcheck', false)
+            easymde.togglePreview()
+        }
+        easymde.codemirror.on('optionChange',  (instance, obj) => {
+            if (obj === 'fullScreen' && instance.options.fullScreen) {
+                $('.fixed-easymde').css('z-index', 100)
+            } else {
+                $('.fixed-easymde').css('z-index', 1)
+            }
+        })
+    })
 
     /********** END MARKDOWN EDITOR **********/
 

@@ -89,6 +89,8 @@
                                 @endif
                             @elseif($row->type == 'relationship')
                                  @include('hymer::formfields.relationship', ['view' => 'read', 'options' => $row->details])
+                            @elseif($row->type == 'markdown_editor')
+                                 @include('hymer::formfields.markdown_editor', ['view' => 'read', 'options' => $row->details])
                             @elseif($row->type == 'select_dropdown' && property_exists($row->details, 'options') &&
                                     !empty($row->details->options->{$dataTypeContent->{$row->field}})
                             )

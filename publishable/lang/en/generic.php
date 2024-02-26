@@ -25,6 +25,7 @@ return [
     'compass'                => 'Compass',
     'contains'               => 'contains',
     'count'                  => 'count',
+    'create'                 => 'Create',
     'created_at'             => 'Created at',
     'custom'                 => 'Custom',
     'dashboard'              => 'Dashboard',

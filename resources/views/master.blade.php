@@ -144,7 +144,7 @@ if (Str::startsWith(Auth::user()->avatar, 'http://') || Str::startsWith(Auth::us
             })();
         </script>
         <!-- Main Content -->
-        <div class="container-fluid">
+        <div class="container-fluid position-relative fixed-easymde">
             <div class="side-body padding-top px-4">
                 @yield('page_header')
                 <div id="hymer-notifications"></div>

@@ -25,6 +25,7 @@ return [
     'compass'                => '指南针',
     'contains'               => '包含',
     'count'                  => '共',
+    'create'                 => '新增',
     'created_at'             => '创建于',
     'custom'                 => '自定义',
     'dashboard'              => '控制面板',

@@ -68,7 +68,13 @@
                                     <legend class="text-{{ $row->details->legend->align ?? 'center' }}" style="background-color: {{ $row->details->legend->bgcolor ?? '#f0f0f0' }};padding: 5px;">{{ $row->details->legend->text }}</legend>
                                 @endif
 
-                                <div class="form-group mb-3 @if($row->type == 'hidden') hidden @endif col-md-{{ $display_options->width ?? 12 }} {{ $errors->has($row->field) ? 'has-error' : '' }}" @if(isset($display_options->id)){{ "id=$display_options->id" }}@endif>
+                                <div class="form-group mb-3
+                                    @if(isset($display_options->class)){{ $display_options->class }}@endif
+                                    @if($row->type == 'hidden') d-none @endif
+                                    col-md-{{ $display_options->width ?? 12 }}
+                                    {{ $errors->has($row->field) ? 'has-error' : '' }}"
+                                    @if(isset($display_options->id)){{ "id=$display_options->id" }}@endif
+                                >
                                     {{ $row->slugify }}
                                     <label class="form-label" for="{{ $row->field }}">{{ $row->getTranslatedAttribute('display_name') }}</label>
                                     @include('hymer::multilingual.input-hidden-bread-edit-add')

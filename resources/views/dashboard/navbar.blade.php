@@ -18,13 +18,20 @@
                         </li>
                         @foreach ($segments as $segment)
                             @php
-                                $url .= '/'.$segment;
+                                $url .= '/' . $segment;
+                                $breadcrumb = urldecode($segment);
+                                $dataType = Hymer::model('DataType')->where('slug', $breadcrumb)->first();
+                                if (!empty($dataType)) {
+                                    $breadcrumb = $dataType->display_name_singular;
+                                } else {
+                                    $breadcrumb = ucfirst($breadcrumb);
+                                }
                             @endphp
                             @if ($loop->last)
-                                <li>{{ ucfirst(urldecode($segment)) }}</li>
+                                <li>{{ empty($dataType) ? __('hymer::generic.' . urldecode($segment)) : $breadcrumb }}</li>
                             @else
                                 <li>
-                                    <a href="{{ $url }}">{{ ucfirst(urldecode($segment)) }}</a>
+                                    <a href="{{ $url }}">{{ $breadcrumb }}</a>
                                 </li>
                             @endif
                         @endforeach
