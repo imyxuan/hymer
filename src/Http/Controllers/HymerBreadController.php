@@ -299,7 +299,7 @@ class HymerBreadController extends Controller
             DB::commit();
 
             return back()->with([
-                'message' => 'Successfully created new relationship for ' . $request->relationship_table,
+                'message' => __('hymer::bread.edit_bread_for_table', ['table' => $request->relationship_table]),
                 'alert-type' => 'success',
             ]);
         } catch (\Exception $e) {

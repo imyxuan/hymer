@@ -66,7 +66,7 @@
                         <div class="accordion-collapse collapse show p-3" id="links">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://hymer-docs.devdojo.com/" target="_blank" class="hymer-link"
+                                    <a href="https://www.imyxuan.site/" target="_blank" class="hymer-link"
                                        style="background-image:url('{{ hymer_asset('images/compass/documentation.jpg') }}')">
                                     <span class="resource_label">
                                         <i class="hymer-documentation"></i>
@@ -75,7 +75,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="https://hymer.devdojo.com/" target="_blank" class="hymer-link"
+                                    <a href="https://www.imyxuan.site/" target="_blank" class="hymer-link"
                                        style="background-image:url('{{ hymer_asset('images/compass/hymer-home.jpg') }}')">
                                     <span class="resource_label">
                                         <i class="hymer-browser"></i>

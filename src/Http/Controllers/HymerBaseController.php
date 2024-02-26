@@ -3,10 +3,14 @@
 namespace IMyxuan\Hymer\Http\Controllers;
 
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 use IMyxuan\Hymer\Database\Schema\SchemaManager;
 use IMyxuan\Hymer\Events\BreadDataAdded;
 use IMyxuan\Hymer\Events\BreadDataDeleted;
@@ -140,7 +144,7 @@ class HymerBaseController extends Controller
         // Check if BREAD is Translatable
         $isModelTranslatable = is_bread_translatable($model);
 
-        // Eagerload Relations
+        // Eager load Relations
         $this->eagerLoadRelations($dataTypeContent, $dataType, 'browse', $isModelTranslatable);
 
         // Check if server side pagination is enabled
@@ -187,6 +191,22 @@ class HymerBaseController extends Controller
 
         if (view()->exists("hymer::$slug.browse")) {
             $view = "hymer::$slug.browse";
+        }
+
+        // TODO why no carry url params?
+        if ($isServerSide) {
+            $params = [
+                's' => $search->value,
+                'key' => $search->key,
+                'filter' => $search->filter,
+            ];
+            $dataTypeContent->appends($params);
+            if (!empty($sortOrder)) {
+                $dataTypeContent->appends([
+                    'sort_order' => $sortOrder,
+                    'order_by'   => $orderBy,
+                ]);
+            }
         }
 
         return Hymer::view($view, compact(
@@ -457,7 +477,7 @@ class HymerBaseController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      *
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function store(Request $request)
     {
@@ -815,9 +835,9 @@ class HymerBaseController extends Controller
     /**
      * Order BREAD items.
      *
-     * @param string $table
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @param Request $request
+     * @return Factory|RedirectResponse|View
+     * @throws AuthorizationException
      */
     public function order(Request $request)
     {

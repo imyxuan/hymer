@@ -48,6 +48,7 @@ return [
     'scope'                  => 'Scope',
     'soft_deletes_on'        => 'Show Deleted',
     'soft_deletes_off'       => 'Hide Deleted',
+    'successfully_created_new_relationship_for'   => 'Successfully created new relationship for',
     'updated_order'          => 'Order updated successfully',
     'url_slug'               => 'URL Slug (must be unique)',
     'url_slug_ph'            => 'URL slug (ex. posts)',
