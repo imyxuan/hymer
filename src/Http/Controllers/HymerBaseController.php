@@ -21,6 +21,8 @@ use IMyxuan\Hymer\Facades\Hymer;
 use IMyxuan\Hymer\Http\Controllers\Traits\BreadRelationshipParser;
 use IMyxuan\Hymer\Models\DataRow;
 use IMyxuan\Hymer\Models\DataType;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 class HymerBaseController extends Controller
 {
@@ -926,6 +928,9 @@ class HymerBaseController extends Controller
      * @param Request $request
      *
      * @return mixed
+     * @throws AuthorizationException
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function relation(Request $request)
     {
@@ -956,6 +961,18 @@ class HymerBaseController extends Controller
                 // Apply local scope if it is defined in the relationship-options
                 if (isset($options->scope) && $options->scope != '' && method_exists($model, 'scope'.ucfirst($options->scope))) {
                     $model = $model->{$options->scope}();
+                }
+
+                // Add Relationship Order By Ajax
+                $relationshipDataType = Hymer::model('DataType')->where('model_name', $options->model)->first();
+                $relationshipOrderColumn = '';
+                $relationshipOrderDirection = '';
+                if (!empty($relationshipDataType)) {
+                    $relationshipOrderColumn = $relationshipDataType->getOrderColumnAttribute();
+                    $relationshipOrderDirection = $relationshipDataType->getOrderDirectionAttribute();
+                }
+                if (!empty($relationshipOrderColumn)) {
+                    $model = $model->orderBy($relationshipOrderColumn, $relationshipOrderDirection);
                 }
 
                 // If search query, use LIKE to filter results depending on field label
@@ -989,6 +1006,7 @@ class HymerBaseController extends Controller
                 }
 
                 // Sort results
+                logger(json_encode($options));
                 if (!empty($options->sort->field)) {
                     if (!empty($options->sort->direction) && strtolower($options->sort->direction) == 'desc') {
                         $relationshipOptions = $relationshipOptions->sortByDesc($options->sort->field);
