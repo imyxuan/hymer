@@ -28,7 +28,7 @@
                                 }
                             @endphp
                             @if ($loop->last)
-                                <li>{{ empty($dataType) ? __('hymer::generic.' . urldecode($segment)) : $breadcrumb }}</li>
+                                <li>{{ !is_numeric($breadcrumb) && empty($dataType) ? __('hymer::generic.' . urldecode($segment)) : $breadcrumb }}</li>
                             @else
                                 <li>
                                     <a href="{{ $url }}">{{ $breadcrumb }}</a>
